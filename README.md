@@ -1,4 +1,17 @@
-# C3ProjectTemplate
+# Compute Minimum Number of Coins to Equal a Certain Amount
+
+## Description
+
+## Algorithms
+
+### Recursive Solution
+
+### Dynamic Programming Solution
+
+# Dynamic Programming
+
+
+# Project Templates
 
 See solutions in different languages in the "Templates" directory. Once you decide which language you'd like to use,
 simply open that directory in your favorite IDE, and you should be able to run the included unit tests "out of the box".
