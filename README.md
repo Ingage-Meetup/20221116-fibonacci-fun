@@ -13,7 +13,9 @@ If any combination of coins cannot make up the required amount, return -1.
 Examples:
 
 Input coin[] = [25, 10, 5], M = 30, Output: 2 (One 25 and one 5)
+
 Input coin[] = [9, 6, 5, 1], M = 13, Output: 3 (Two 6 and one 1)
+
 Input coin[] = [1, 3, 5, 7], M = 18, Output: 4 Multiple solutions: (Two 7, one 3, and one 5), (Three 5 and one 3), (One 7, two 5, and one 1)
 
 ## Algorithms
