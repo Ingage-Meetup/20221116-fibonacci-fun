@@ -34,8 +34,11 @@ for I = 1 .. k-1
 		current count =  minCoin(coin, k, m – count[i])
 		if current count != MAXINT and current count + 1 < minCount
 			minCount = current count + 1 
-![image](https://user-images.githubusercontent.com/1699708/199734129-951ce5be-cb50-4037-bde0-e4813165decd.png)
 ```
+
+Time complexity: O(k^m) = exponential
+
+
 
 ### Dynamic Programming Solution
 
@@ -53,8 +56,9 @@ for i = 1..m
             if (sub-result != MAZINT && sub-result + 1 < change[i]
                 change[i] = sub-result + 1
 return change[m]
-![image](https://user-images.githubusercontent.com/1699708/199734525-e5714a31-8b5c-4822-beed-0c65466fb8b1.png)
 ```
+
+Time complexity: O(km) = linear
 
 
 
