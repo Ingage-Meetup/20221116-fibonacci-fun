@@ -22,7 +22,41 @@ Input coin[] = [1, 3, 5, 7], M = 18, Output: 4 Multiple solutions: (Two 7, one 3
 
 ### Recursive Solution
 
+```
+coins[] = array of coin denominations to choose from
+m = amount of money
+k = length of coins[]
+minCount = MAXINT
+
+if m = 0 return 0 (no coins needed)
+for I = 1 .. k-1
+	if coin[i] <= m
+		current count =  minCoin(coin, k, m – count[i])
+		if current count != MAXINT and current count + 1 < minCount
+			minCount = current count + 1 
+![image](https://user-images.githubusercontent.com/1699708/199734129-951ce5be-cb50-4037-bde0-e4813165decd.png)
+```
+
 ### Dynamic Programming Solution
+
+```coins[] = array of coin denominations to choose from
+m = amount of money
+k = length of coins[]
+change[] = len m+1, stores min coins for each value i
+
+change[0] = 0
+initialize change[1..m] = MAXINT
+for i = 1..m
+    for j = 0..k-1
+        if coins[j] <= I
+            int sub-result = change[i – coins[j]
+            if (sub-result != MAZINT && sub-result + 1 < change[i]
+                change[i] = sub-result + 1
+return change[m]
+![image](https://user-images.githubusercontent.com/1699708/199734525-e5714a31-8b5c-4822-beed-0c65466fb8b1.png)
+```
+
+
 
 # Dynamic Programming
 
