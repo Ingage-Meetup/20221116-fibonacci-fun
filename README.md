@@ -4,7 +4,7 @@
 
 You are given an amount of money M and an integer array C[] which contains n-number of coins of different denominations.
 
-Write a program to return the minumum number of coins needed to equal M.
+Write a program to return the minimum number of coins needed to equal M.
 
 Assume an infinite supply of each kind of coin. 
 
