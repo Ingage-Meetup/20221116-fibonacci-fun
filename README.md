@@ -1,68 +1,30 @@
-# Compute Minimum Number of Coins to Equal a Certain Amount of Money
+# Compute the Nth Fibonacci number using  both a recursive and non-recursive implementation
 
 ## Description
 
-You are given an amount of money M and an integer array C[] which contains n-number of coins of different denominations.
+The Fibonacci sequence is a sequence of integers with the following definition:
 
-Write a program to return the minimum number of coins needed to equal M.
+F0 = 0
+F1 = 1
+Fn = Fn-1 + Fn-2, n >= 2
 
-Assume an infinite supply of each kind of coin. 
+## Assignment
 
-If any combination of coins cannot make up the required amount, return -1.
+1. Create two implementations of a function to compute the nth Fibonacci number
 
-Examples:
+    a. Implementation 1: use a recursive call 
+    
+    b. Implementation 2: do not use recursion (or a stack to simulate recursion)
+    
+2. Instrument the two implementations so that you can compare their performance
 
-Input coin[] = [25, 10, 5], M = 30, Output: 2 (One 25 and one 5)
+3. Answer the following questions:
 
-Input coin[] = [9, 6, 5, 1], M = 13, Output: 3 (Two 6 and one 1)
+    a. Which function exhibits better performance?
+    
+    b. Why?
+    
 
-Input coin[] = [1, 3, 5, 7], M = 18, Output: 4 Multiple solutions: (Two 7, one 3, and one 5), (Three 5 and one 3), (One 7, two 5, and one 1)
-
-## Algorithms
-
-### Recursive Solution
-
-```
-coins[] = array of coin denominations to choose from
-m = amount of money
-k = length of coins[]
-minCount = MAXINT
-
-if m = 0 return 0 (no coins needed)
-for I = 1 .. k-1
-	if coin[i] <= m
-		current count =  minCoin(coin, k, m – count[i])
-		if current count != MAXINT and current count + 1 < minCount
-			minCount = current count + 1 
-```
-
-Time complexity: O(k^m) = exponential
-
-
-
-### Dynamic Programming Solution
-
-```coins[] = array of coin denominations to choose from
-m = amount of money
-k = length of coins[]
-change[] = len m+1, stores min coins for each value i
-
-change[0] = 0
-initialize change[1..m] = MAXINT
-for i = 1..m
-    for j = 0..k-1
-        if coins[j] <= I
-            int sub-result = change[i – coins[j]
-            if (sub-result != MAZINT && sub-result + 1 < change[i]
-                change[i] = sub-result + 1
-return change[m]
-```
-
-Time complexity: O(km) = linear
-
-
-
-# Dynamic Programming
 
 
 # Project Templates
