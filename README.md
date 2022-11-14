@@ -4,9 +4,9 @@
 
 The Fibonacci sequence is a sequence of integers with the following definition:
 
-`F0 = 0
-F1 = 1
-Fn = Fn-1 + Fn-2, n >= 2`
+`- F0 = 0
+- F1 = 1
+- Fn = Fn-1 + Fn-2, n >= 2`
 
 ## Assignment
 
